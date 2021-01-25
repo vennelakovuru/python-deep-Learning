@@ -1,0 +1,41 @@
+# The print keyword in Python 2.x is replaced by the print() function in Python 3.x.
+
+print 'Hello'
+# Python 2.x Output:
+Hello
+
+# Python 3.x doesn't support print
+# Output:
+File "main.py", line 1
+
+	print 'Hello'
+
+					^
+
+SyntaxError: invalid syntax
+
+print('Hello world')
+It works in both Python 2.x and 3.x:
+
+# Output
+Hello world
+
+
+# Integer division returns float values in python 3.x and integer values in 2.x
+
+    print 9 / 2
+    print -7 / 5
+
+    # Output in Python 2.x
+    4
+    -4
+
+    # Output in Python 3.x :
+    4.5
+    -4.5
+
+# In python 2, to store Unicode string value, you require to define them with "u".
+# In Python 3, default storing of strings is Unicode.
+
+# In Python 2, xrange() function is used for iterations
+# In Python 3, Range() function is used to perform iterations.
