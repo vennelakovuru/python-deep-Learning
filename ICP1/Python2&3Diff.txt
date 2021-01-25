@@ -24,7 +24,7 @@ Hello world
 # Integer division returns float values in python 3.x and integer values in 2.x
 
     print 9 / 2
-    print -7 / 5
+    print -9 / 2
 
     # Output in Python 2.x
     4
