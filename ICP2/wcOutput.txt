@@ -1,0 +1,11 @@
+python: 2
+course: 3
+deep: 1
+Learning: 1
+is: 2
+a: 2
+programming: 1
+language: 1
+learning: 1
+continuous: 1
+process: 1
