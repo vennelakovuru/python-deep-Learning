@@ -11,7 +11,6 @@ class Employee:
         self.department = department
         Employee.count += 1
         Employee.totalsal += self.salary
-        print(self.name, self.family, self.salary, self.department)
 
     # method to calculate average salary
     def avgsal(self):
