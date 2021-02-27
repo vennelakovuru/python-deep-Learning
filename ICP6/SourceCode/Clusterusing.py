@@ -44,18 +44,20 @@ kmeans.fit(x)
 y_cluster_kmeans = kmeans.predict(x)
 print("silhouette score: ", metrics.silhouette_score(x, y_cluster_kmeans))
 
-# Applying kmeans on scaled features
+# Feature scaling
 scaler = preprocessing.StandardScaler()
 scaler.fit(x)
 x_scaled_array = scaler.transform(x)
 x_scaled = pd.DataFrame(x_scaled_array, columns=x.columns)
+
+# Applying kmeans on scaled features
 scaled_kmeans = KMeans(3)
 scaled_kmeans.fit(x_scaled)
 y_scaled_kmeans = scaled_kmeans.predict(x_scaled)
 print("silhouette score after scaling:", metrics.silhouette_score(x_scaled, y_scaled_kmeans))
 
 
-# Applying PCA on given data set without scaling
+# Applying PCA on given data set
 pca = PCA(3)
 x_pca = pca.fit_transform(x)
 df2 = pd.DataFrame(x_pca)
@@ -66,5 +68,6 @@ kmeans = KMeans(3)
 kmeans.fit(x_pca)
 y_pca_kmeans = kmeans.predict(x_pca)
 print("silhouette score after applying PCA: ", metrics.silhouette_score(x_pca, y_pca_kmeans))
+
 plt.scatter(x_pca[:, 0], x_pca[:, 1], c=y_pca_kmeans, s=50)
 plt.show()
