@@ -1,9 +1,9 @@
+from itertools import islice
 from bs4 import BeautifulSoup
 import urllib.request
 
 
-def search_spider():
-
+def search():
     url = "https://en.wikipedia.org/wiki/Google"
     source_code = urllib.request.urlopen(url)
     soup = BeautifulSoup(source_code, "html.parser")
@@ -12,9 +12,13 @@ def search_spider():
     file.write(str(body.text))
 
 
-search = input('type "s" to start wikiScrap, type "q" to exit')
-if search == 'q' or search == 'Q':
-    exit()
-else:
-    file = open('input.txt', 'a+', encoding='utf-8')
-    search_spider()
+file = open('input.txt', 'a+', encoding='utf-8')
+search()
+
+f1 = open('input.txt')
+f2 = open('input100lines.txt', 'a')
+lines = list(islice(f1, 100))
+f2.writelines(lines)
+
+f1.close()
+f2.close()

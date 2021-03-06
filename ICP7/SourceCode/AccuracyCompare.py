@@ -59,7 +59,7 @@ svc_pred = svc.predict(X_test_tfidf_bigram)
 svc_bigram = metrics.accuracy_score(twenty_test.target, svc_pred)
 print("SVM Accuracy Score With bigram", svc_bigram)
 
-# Set argument stop_words='english' and see how accuracy changes
+# Setting argument stop_words='english'
 # Setting TfidfVectorizer(ngram_range=(1,2)) & Stopword=english
 tfidf_Vect_stopword = TfidfVectorizer(ngram_range=(1, 2), stop_words='english')
 

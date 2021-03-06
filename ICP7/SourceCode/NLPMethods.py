@@ -13,7 +13,7 @@ nltk.download('words')
 nltk.download('punkt')
 
 # Reading the data in the file
-input = open('input.txt', encoding="utf8").read()
+input = open('input100lines.txt', encoding="utf8").read()
 
 # Tokenizing into Sentences and Words
 sentence_tokens = nltk.sent_tokenize(input)  # Sentence Tokens
