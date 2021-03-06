@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea1e3cc6-1b2b-41ad-bb86-3aa5cc8885e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ScreenShots/Output1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SourceCode/input100lines.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SourceCode/AccuracyCompare.py" beforeDir="false" afterPath="$PROJECT_DIR$/SourceCode/AccuracyCompare.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SourceCode/ExtractUrlTextToInput.py" beforeDir="false" afterPath="$PROJECT_DIR$/SourceCode/ExtractUrlTextToInput.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SourceCode/NLPMethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/SourceCode/NLPMethods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SourceCode/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SourceCode/input.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +26,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.NLPMethods">
+  <component name="RunManager" selected="Python.AccuracyCompare">
     <configuration name="AccuracyCompare" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ICP7" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,9 +92,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.AccuracyCompare" />
         <item itemvalue="Python.NLPMethods" />
         <item itemvalue="Python.ExtractUrlTextToInput" />
-        <item itemvalue="Python.AccuracyCompare" />
       </list>
     </recent_temporary>
   </component>

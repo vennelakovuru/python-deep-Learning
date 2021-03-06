@@ -38,7 +38,7 @@ svc = SVC()
 svc.fit(X_train_tfidf, twenty_train.target)
 
 # Applying Prediction on the Test with SVC
-svc_pred = clf.predict(X_test_tfidf)
+svc_pred = svc.predict(X_test_tfidf)
 
 # Calculating Accuracy for SVC
 svc_score = metrics.accuracy_score(twenty_test.target, svc_pred)
