@@ -77,11 +77,10 @@ plt.show()
 
 """
 
-pure_sentences=df['review']
-
 #Importing package for padding data
 from keras.preprocessing.sequence import pad_sequences
 
+pure_sentences=df['review']
 #calculating max reviews length
 maxrev_len= max([len(s.split()) for s in pure_sentences])
 #calculating Vocabulary size
@@ -99,7 +98,7 @@ y = le.fit_transform(y)#applying label encoding on label matrix
 X_train, X_test, y_train, y_test = train_test_split(padded_docs, y, test_size=0.25, random_state=1000)
 
 print("vocab_size:",vocab_size)
-print("max_review_len:",max_review_len)
+print("max_review_len:",maxrev_len)
 
 from keras.layers import Embedding, Flatten
 

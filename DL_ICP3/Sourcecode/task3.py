@@ -26,7 +26,7 @@ from pprint import pprint
 pprint(list(newsgroups.target_names))
 
 #Selecting the categories
-categories = ['alt.atheism', 'sci.space']
+categories = ['sci.med', 'sci.space']
 #loading the required categories data into Dataframe
 newsgroups_train = fetch_20newsgroups(subset='train', shuffle=True, categories=categories)
 
@@ -78,7 +78,7 @@ plt.legend(['accuracy', 'validation accuracy','loss','validation loss'], loc='up
 plt.show()
 
 #Selecting the categories
-categories = ['alt.atheism', 'sci.space']
+categories = ['sci.med', 'sci.space']
 
 #loading the required categories
 newsgroups_train = fetch_20newsgroups(subset='train', shuffle=True, categories=categories)
@@ -116,7 +116,7 @@ from keras.layers import Embedding, Flatten
 #Sequential Neural Network model
 model = Sequential()
 #Embedding layer with 8648 neurons
-model.add(Embedding(vocab_size, 50, input_length=8648))
+model.add(Embedding(vocab_size, 50, input_length=6141))
 #Flattening Network
 model.add(Flatten())
 #hidden layer 300neurons, input layer 8648 Neurons
